@@ -4,9 +4,12 @@
 //node index.js
 
 import ArvoreBinaria from "./ArvoreBinaria.js";
+import ArvoreBuscaBinaria from "./ArvoreBuscaBinaria.js";
 import No from "./No.js";
 
+
 let arvoreB = new ArvoreBinaria("A");
+let arvoreBST = new ArvoreBuscaBinaria("A");
 
 console.log(arvoreB);
 
@@ -19,9 +22,7 @@ let noF = new No("F");
 
 noA.adicionaFilhoEsquerda(noB);
 noA.adicionaFilhoDireita(noC);
-
 noB.adicionaFilhoDireita(noF); 
-
 noC.adicionaFilhoEsquerda(noD);
 noC.adicionaFilhoDireita(noE);
 
@@ -31,7 +32,9 @@ noC.adicionaFilhoDireita(noE);
 
 console.log(arvoreB);
 
-arvoreB.buscarL();
+
+arvoreBST.buscar("E");
+console.log(arvoreBST);
 
 
-console.log(arvoreB);
+
