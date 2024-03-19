@@ -3,7 +3,6 @@ import Aresta from "./Aresta.js";
 export default class Vertice{
     valor = "";
     adjacentes = [];  //aresta
-<<<<<<< HEAD
     heuristica = null; //distancia em linha reta
 
     constructor(valor, heuristica){
@@ -34,16 +33,5 @@ export default class Vertice{
         
         return ordenados;
     }
-=======
-
-    constructor(valor){
-        this.valor = valor;
-    }
-
-    adicionarAresta(destino,peso){
-        this.arestas.push(new Aresta(this, destino, peso))
-    }
-
->>>>>>> 073f815ccbd179d5ac6755ee5396b21b7918106e
 
 }

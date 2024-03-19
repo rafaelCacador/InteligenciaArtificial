@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //npm init
 //npm init -y
 //node index.js
@@ -31,24 +30,3 @@ c.adicionarAresta(t,4.8);
 g.adicionarAresta(t,2.5);
 
 console.log(s.getOrdenados());
-=======
-
-import Vertice from "./Vertice.js";
-
-let y = new Vertice("Y");
-let x = new Vertice("X");
-let w = new Vertice("W");
-let u = new Vertice("U");
-let v = new Vertice("V");
-
-v.adicionarAresta(u,0);
-v.adicionarAresta(w,0);
-v.adicionarAresta(x,0);
-u.adicionarAresta(u,0);
-u.adicionarAresta(x,0);
-w.adicionarAresta(x,0);
-w.adicionarAresta(x,0);
-x.adicionarAresta(y,0);
-
-
->>>>>>> 073f815ccbd179d5ac6755ee5396b21b7918106e
