@@ -30,3 +30,4 @@ c.adicionarAresta(t,4.8);
 g.adicionarAresta(t,2.5);
 
 console.log(s.getOrdenados());
+caminho.imprimeCaminho();
