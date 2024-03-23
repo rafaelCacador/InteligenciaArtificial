@@ -1,24 +1,29 @@
-export default class Rastreador {
-    vertice = null;
-    anterior = null;
+    export default class Rastreador {
+        vertice = null;
+        anterior = null;
 
-    constructor(vertice, anterior) {
-        this.vertice = vertice;
-        this.anterior = anterior;
-    }
-
-    imprimeCaminho() {
-        let atual = this;
-        let saida = "";
-        saida += atual.vertice.valor;
-
-        console.log(atual.vertice.valor);
-
-        while (atual.anterior != null) {
-            atual = atual.anterior;
-            saida += "-->"+atual.vertice.valor;
+        constructor(vertice, anterior) {
+            this.vertice = vertice;
+            this.anterior = anterior;
         }
 
-        console.log(saida+"\n");
-    }
-}
+        imprimeCaminho() {
+            let atual = this;
+            let saida = "";
+             
+            saida += atual.vertice.valor;  
+
+            console.log(atual.vertice.valor);
+
+            while (atual.anterior != null) {
+
+                atual = atual.anterior;
+
+                saida = atual.vertice.valor + " --> " + saida;              
+            }
+
+            console.log(saida+"\n");
+            
+
+        }
+    }   
