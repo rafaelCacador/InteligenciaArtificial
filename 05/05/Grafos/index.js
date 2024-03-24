@@ -6,6 +6,7 @@ import Grafo from "./Grafo.js";
 import Vertice from "./Vertice.js";
 import Rastreador from "./Rastreador.js";
 
+
 let s = new Vertice("s", null);
 let t = new Vertice("t", 0);
 let a = new Vertice("a", 8.1);
@@ -35,5 +36,5 @@ console.log(grafo);
 
 console.log(s.getOrdenados());
 
-let caminho = new Rastreador(t, new Rastreador(s, null));
+let caminho = new Rastreador(t, s);
 caminho.imprimeCaminho();

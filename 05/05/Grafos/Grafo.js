@@ -1,3 +1,5 @@
+import Rastreador from "./Rastreador.js";
+
 export default class Grafo{
     inicio = null;
     meta = null;

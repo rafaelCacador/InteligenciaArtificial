@@ -10,6 +10,7 @@
         imprimeCaminho() {
             let atual = this;
             let saida = "";
+            let somaCaminho = 0;
              
             saida += atual.vertice.valor;  
 
@@ -19,10 +20,14 @@
 
                 atual = atual.anterior;
 
-                saida = atual.vertice.valor + " --> " + saida;              
-            }
+                saida = atual.vertice.valor + " --> " + saida;    
+
+                somaCaminho += atual.vertice.heuristica;
+
+            }   
 
             console.log(saida+"\n");
+            console.log("Soma do Caminho: " + somaCaminho);
             
 
         }
